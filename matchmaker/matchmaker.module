@@ -14,8 +14,7 @@ function matchmaker__menu() {
     'title' => 'Matchmakers',
     'description' => 'Matchmakers',
     'page callback' => 'matchmaker_matchmakers_page',
-    'type' => MENU_LOCAL_TASK,
-    'access callback' => TRUE
+    'type' => MENU_DEFAULT_LOCAL_TASK
   );
   return $items;
 }
