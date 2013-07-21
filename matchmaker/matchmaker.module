@@ -1,0 +1,25 @@
+/**
+ * Implements hook_help().
+ */
+function matchmakerr_help($path, $arg) {
+ return('Genopen Matchmaker - makers and teams');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function matchmaker__menu() {
+  $items['matchmaker/matchmakers'] = array(
+    'title' => 'Matchmakers',
+    'description' => 'Matchmakers',
+    'page callback' => 'matchmaker_matchmakers_page',
+    'type' => MENU_LOCAL_TASK,
+    'access callback' => TRUE
+  );
+  return $items;
+}
+
+function matchmaker_matchmakers_page(){
+
+	return ('people');
+}

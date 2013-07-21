@@ -1,0 +1,4 @@
+name = Matchmaker
+description = Provides list view of matchmaker and matchmaker teams
+package = genopen 
+core = 7.x
